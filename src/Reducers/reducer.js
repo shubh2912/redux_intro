@@ -10,7 +10,7 @@ export default (state, action) => {
     }
 
     switch (action.type) {
-        case actionTypes.SAVED_USER_DATA: {
+        case actionTypes.SAVE_USER_DATA: {
             const userData = [...state.userData];
             userData.push(action.payload);
             state = Object.assign({}, state, {
